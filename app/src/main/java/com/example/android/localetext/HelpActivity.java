@@ -65,7 +65,7 @@ public class HelpActivity extends AppCompatActivity {
         Intent dialIntent = new Intent(Intent.ACTION_DIAL);
         // Set the formatted phone number as data for the intent.
         dialIntent.setData(Uri.parse(formattedNumber));
-        // If package resolves to an app, send intent.
+        // If package resolves to an app, send intent. Bila
         if (dialIntent.resolveActivity(getPackageManager()) != null) {
             startActivity(dialIntent);
         } else {
